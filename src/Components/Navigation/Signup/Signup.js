@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 function Signup() {
     const [formData, setFormData] = useState({
-        name: "",
+        username: "",
         email: "",
         password: "",
     });
