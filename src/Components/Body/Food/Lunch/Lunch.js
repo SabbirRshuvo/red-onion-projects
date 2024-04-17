@@ -12,7 +12,7 @@ function Lunch() {
                 <div className="flex flex-wrap -mx-4">
                     {/* First Card */}
                     <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg cursor-pointer">
                             <img
                                 className="w-full"
                                 src={cardImage1}
@@ -34,7 +34,7 @@ function Lunch() {
 
                     {/* Second Card */}
                     <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer">
                             <img
                                 className="w-full"
                                 src={cardImage2}
@@ -56,7 +56,7 @@ function Lunch() {
 
                     {/* Third Card */}
                     <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg cursor-pointer">
                             <img
                                 className="w-full"
                                 src={cardImage3}
@@ -77,7 +77,7 @@ function Lunch() {
                     </div>
                     {/* Third Card */}
                     <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg cursor-pointer">
                             <img
                                 className="w-full"
                                 src={cardImage4}
@@ -98,7 +98,7 @@ function Lunch() {
                     </div>
                     {/* Third Card */}
                     <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg cursor-pointer">
                             <img
                                 className="w-full"
                                 src={cardImage5}
@@ -117,7 +117,7 @@ function Lunch() {
                     </div>
                     {/* Third Card */}
                     <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden hover:shadow-lg cursor-pointer">
                             <img
                                 className="w-full"
                                 src={cardImage6}
@@ -137,6 +137,11 @@ function Lunch() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <button className="bg-gray-400 hover:bg-gray-700 text-white  py-2 px-4 rounded md:py-3 md:px-6 mb-2">
+                    Checkout Your Food
+                </button>
             </div>
         </div>
     );
