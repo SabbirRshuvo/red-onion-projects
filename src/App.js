@@ -7,6 +7,7 @@ import HomePage from "./Components/HomePage/HomePage";
 import Breakfast from "./Components/Body/Food/Breakfast/Breakfast";
 import Lunch from "./Components/Body/Food/Lunch/Lunch";
 import Dinner from "./Components/Body/Food/Dinner/Dinner";
+import Footer from "./Components/Body/Footer/Footer";
 function App() {
     return (
         <div className="App">
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/lunch" element={<Lunch />}></Route>
                 <Route path="/dinner" element={<Dinner />}></Route>
             </Routes>
+            <Footer />
         </div>
     );
 }

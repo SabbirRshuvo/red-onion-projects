@@ -1,5 +1,7 @@
+import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../../firebase.init";
 
 function Login() {
     // State to store form field values
@@ -15,16 +17,27 @@ function Login() {
             [name]: value,
         });
     };
+    const navigate = useNavigate();
+    const [message, setMessage] = useState("");
     // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+        signInWithEmailAndPassword(auth, formData.email, formData.password)
+            .then((userInfo) => {
+                if (userInfo) {
+                    setMessage("Login Successfull");
+                    setTimeout(() => {
+                        navigate("/");
+                    }, 2000);
+                }
+            })
+            .catch((error) => setMessage(error.message));
     };
 
     return (
         <div className=" flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md w-full space-y-8">
-                <div></div>
+                {message && <p>{message}</p>}
                 <form
                     className="mt-8 space-y-6"
                     action="#"

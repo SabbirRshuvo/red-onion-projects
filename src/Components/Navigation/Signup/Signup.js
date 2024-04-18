@@ -1,5 +1,8 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../../firebase.init";
 function Signup() {
     const [formData, setFormData] = useState({
         username: "",
@@ -13,15 +16,27 @@ function Signup() {
             [name]: value,
         });
     };
+    //
+    const navigate = useNavigate();
+    const [message, setMessage] = useState("");
     // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+        createUserWithEmailAndPassword(auth, formData.email, formData.password)
+            .then((userInfo) => {
+                if (userInfo) {
+                    setMessage("Account created successfully");
+                    setTimeout(() => {
+                        navigate("/");
+                    }, 2000);
+                }
+            })
+            .catch((error) => setMessage(error.message));
     };
     return (
         <div className="flex  justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md w-full space-y-8">
-                <div></div>
+                {message && <p>{message}</p>}
                 <form
                     onSubmit={handleSubmit}
                     className="mt-8 space-y-6"
@@ -47,17 +62,17 @@ function Signup() {
                         </div>
                         {/* Email field */}
                         <div>
-                            <label htmlFor="email-address" className="sr-only">
+                            <label htmlFor="email" className="sr-only">
                                 Email address
                             </label>
                             <input
                                 onChange={handleInputChange}
-                                id="email-address"
+                                id="email"
                                 name="email"
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                 placeholder="Email address"
                             />
                         </div>
@@ -71,9 +86,9 @@ function Signup() {
                                 id="password"
                                 name="password"
                                 type="password"
-                                autoComplete="new-password"
+                                autoComplete="current-password"
                                 required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                 placeholder="Password"
                             />
                         </div>
