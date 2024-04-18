@@ -11,8 +11,8 @@ import Footer from "./Components/Body/Footer/Footer";
 function App() {
     return (
         <div className="App">
-            <HomePage />
             <Routes>
+                <Route path="/" element={<HomePage />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/signup" element={<Signup />}></Route>
                 <Route path="/cart" element={<Cart />}></Route>

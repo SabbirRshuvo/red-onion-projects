@@ -1,0 +1,40 @@
+{
+    "lunch": [
+        {
+            "id": 1,
+            "name": "Caesar Salad",
+            "image": "https://i.postimg.cc/fRPbLR5Y/lunch1.png",
+            "price": 6.99
+        },
+        {
+            "id": 1,
+            "name": "Caesar Salad",
+            "image": "https://i.postimg.cc/9X406TpC/lunch2.png",
+            "price": 6.99
+        },
+        {
+            "id": 1,
+            "name": "Caesar Salad",
+            "image": "https://i.postimg.cc/3xW3GQc7/lunch3.png",
+            "price": 6.99
+        },
+        {
+            "id": 1,
+            "name": "Caesar Salad",
+            "image": "https://i.postimg.cc/cHPFFwsX/lunch4.png",
+            "price": 6.99
+        },
+        {
+            "id": 1,
+            "name": "Caesar Salad",
+            "image": "https://i.postimg.cc/nMbqD1Hf/lunch5.png",
+            "price": 6.99
+        },
+        {
+            "id": 2,
+            "name": "Greek Salad",
+            "image": "https://i.postimg.cc/bvCC244X/lunch6.png",
+            "price": 7.99
+        }
+    ]
+}
