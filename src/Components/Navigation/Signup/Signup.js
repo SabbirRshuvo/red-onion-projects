@@ -6,8 +6,6 @@ function Signup() {
         email: "",
         password: "",
     });
-
-    // Function to handle input changes
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -15,7 +13,6 @@ function Signup() {
             [name]: value,
         });
     };
-
     // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
