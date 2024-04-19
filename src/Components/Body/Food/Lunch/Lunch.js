@@ -11,7 +11,7 @@ function Lunch() {
             <div className="container mx-auto py-8">
                 <div className="flex flex-wrap -mx-4">
                     {/* First Card */}
-                    <div className="w-full md:w-1/3 px-4 mb-8">
+                    <div className="w-full md:w-1/3  px-4 mb-8">
                         <div className="max-w-sm rounded overflow-hidden hover:shadow-lg cursor-pointer">
                             <img
                                 className="w-full"

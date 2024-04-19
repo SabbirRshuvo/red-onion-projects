@@ -1,15 +1,18 @@
 import React from "react";
 import logo from "../../../images/logo2.png";
+import { Link } from "react-router-dom";
 function Footer() {
     const currentDate = new Date().toLocaleDateString();
     const currentTime = new Date().toLocaleTimeString();
     return (
         <footer className="bg-gray-900 text-lime-50">
             <div className="container mx-auto py-8">
-                <div className="grid grid-cols-1 md:grid-cols-3  justify-between">
+                <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-4 justify-between">
                     {/* First Column */}
                     <div className="w-40">
-                        <img src={logo} alt=""></img>
+                        <Link to="/" className="flex items-center">
+                            <img src={logo} alt="Logo" className="h-8 mr-2" />
+                        </Link>
                     </div>
 
                     {/* Second Column */}

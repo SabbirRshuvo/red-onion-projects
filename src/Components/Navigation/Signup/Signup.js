@@ -23,6 +23,15 @@ function Signup() {
     const handleSubmit = (e) => {
         e.preventDefault();
         createUserWithEmailAndPassword(auth, formData.email, formData.password)
+            // .then((userInfo) => {
+            //     if (userInfo) {
+            //         setMessage("Account created successfully");
+            //         setTimeout(() => {
+            //             navigate("/");
+            //         }, 2000);
+            //     }
+            // })
+            // .catch((error) => setMessage(error.message));
             .then((userInfo) => {
                 if (userInfo) {
                     setMessage("Account created successfully");
