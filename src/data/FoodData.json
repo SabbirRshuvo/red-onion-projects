@@ -1,0 +1,134 @@
+{
+    "breakfast": [
+        {
+            "id": "1",
+            "name": "Bagel and cream cheese",
+            "imageURL": "/images/breakfast/breakfast1.png",
+            "p": "How we dream about our future",
+            "price": "$6.99"
+        },
+        {
+            "id": "2",
+            "name": "Breakfast sandwich",
+            "imageURL": "/images/breakfast/breakfast2.png",
+            "p": "How we dream about our future",
+            "price": "$9.99"
+        },
+        {
+            "id": "3",
+            "name": "Baked Chiken",
+            "imageURL": "/images/breakfast/breakfast3.png",
+            "p": "How we dream about our future",
+            "price": "$10.99"
+        },
+        {
+            "id": "4",
+            "name": "Eggs Benedict",
+            "imageURL": "/images/breakfast/breakfast4.png",
+            "p": "How we dream about our future",
+            "price": "$8.99"
+        },
+        {
+            "id": "5",
+            "name": "Toast Crossant Fried egg",
+            "imageURL": "/images/breakfast/breakfast5.png",
+            "p": "How we dream about our future",
+            "price": "$19.99"
+        },
+        {
+            "id": "6",
+            "name": "Full Breakfsat Fried egg Toast Bruch",
+            "imageURL": "/images/breakfast/breakfast6.png",
+            "p": "How we dream about our future",
+            "price": "$3.99"
+        }
+    ],
+    "lunch": [
+        {
+            "id": "1",
+            "name": "Healthy Meal plan",
+            "imageURL": "/images/lunch/lunch1.png",
+            "p": "How we dream about our future",
+            "price": "$23.99"
+        },
+        {
+            "id": "2",
+            "name": "Fried Chicken Bento",
+            "imageURL": "/images/lunch/lunch2.png",
+            "p": "How we dream about our future",
+            "price": "$9.99"
+        },
+        {
+            "id": "3",
+            "name": "Tarragon-Rubbed-Salmon",
+            "imageURL": "/images/lunch/lunch3.png",
+            "p": "How we dream about our future",
+            "price": "$6.99"
+        },
+        {
+            "id": "4",
+            "name": "Tarragon-Rubbed-Salmon",
+            "imageURL": "/images/lunch/lunch3.png",
+            "p": "How we dream about our future",
+            "price": "$6.99"
+        },
+        {
+            "id": "5",
+            "name": "Tarragon-Rubbed-Salmon",
+            "imageURL": "/images/lunch/lunch5.png",
+            "p": "How we dream about our future",
+            "price": "$6.99"
+        },
+        {
+            "id": "6",
+            "name": "Tarragon-Rubbed-Salmon",
+            "imageURL": "/images/lunch/lunch6.png",
+            "p": "How we dream about our future",
+            "price": "$6.99"
+        }
+    ],
+    "dinner": [
+        {
+            "id": "1",
+            "name": "Salmon with Grapefruit and Lentis Salad",
+            "imageURL": "/images/dinner/dinner1.png",
+            "p": "How we dream about our future",
+            "price": "$9.99"
+        },
+        {
+            "id": "2",
+            "name": "Lemony Salmon Pciata",
+            "imageURL": "/images/dinner/dinner2.png",
+            "p": "How we dream about our future",
+            "price": "$10.99"
+        },
+        {
+            "id": "3",
+            "name": "Pick Tenderior With Quinoa Plaf",
+            "imageURL": "/images/dinner/dinner3.png",
+            "p": "How we dream about our future",
+            "price": "$12.99"
+        },
+        {
+            "id": "4",
+            "name": "French fries with cheese",
+            "imageURL": "/images/dinner/dinner4.png",
+            "p": "How we dream about our future",
+            "price": "$8.99"
+        },
+        {
+            "id": "5",
+            "name": "Garlic Butter Baked Salmon",
+            "imageURL": "/images/dinner/dinner5.png",
+            "p": "How we dream about our future",
+            "price": "$6.99"
+        },
+        {
+            "id": "6",
+            "name": "Baked Chiken",
+            "imageURL": "/images/dinner/dinner6.png",
+            "p": "How we dream about our future",
+            "price": "$9.99"
+        }
+    ]
+}

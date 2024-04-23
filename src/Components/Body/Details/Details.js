@@ -6,7 +6,7 @@ import group1 from "../../../images/icons/Group 204.png";
 import group2 from "../../../images/icons/Group 245.png";
 import group3 from "../../../images/icons/Group 1133.png";
 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 function Details() {
     return (
         <div className="container mx-auto py-8 ">

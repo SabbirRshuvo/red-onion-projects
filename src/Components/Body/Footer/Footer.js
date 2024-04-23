@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer className="bg-gray-900 text-lime-50">
             <div className="container mx-auto py-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-4 justify-between">
+                <div className="grid lg:grid-cols-1 md:grid-cols-3 sm:grid-cols-4 justify-between bottom-auto">
                     {/* First Column */}
                     <div className="w-40">
                         <Link to="/" className="flex items-center">
